@@ -32,6 +32,7 @@ func main() {
 
 	// Routes
 	e.GET("/health", healthHandler)
+	e.POST("/locks", createLockHandler)
 
 	// Start the server
 	e.Logger.Fatal(e.Start(":8080"))
